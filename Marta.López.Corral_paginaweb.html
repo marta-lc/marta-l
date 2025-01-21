@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Viajes</title>
+    <link rel="stylesheet" href="MartaLópezCorral_paginaweb.css">
+    <script src="Marta.LópezCorral_paginaweb.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guía de Viajes </h1>
+        <img src="https://www.shutterstock.com/image-vector/plane-route-destination-perfect-travel-260nw-1715055775.jpg" alt="Imagen de ejemplo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Marta.López.Corral_paginaweb.html">Inicio</a></li>
+            <li><a href="Marta.LópezCorral_Paginaprincipal.html">Página Principal</a></li>
+            <li><a href="Marta.LópezCorral_contenido1.html">Destinos y Alojamiento</a></li>
+            <li><a href="Marta.LópezCorral_contenido2.html">Actividades y Consejos</a></li>
+            <li><a href="Marta.LópezCorral_contenido3.html">Opiniones y Reseñas</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Contenido Principal</h2>
+        <p>Esta es la página principal donde se enlazan todas las secciones del sitio.</p>
+    </section>
+
+    <section>
+        <h2>Geolocalización</h2>
+        <div id="geolocalizacion"></div>
+    </section>
+
+    <section>
+        <h2>Widget Externo</h2>
+        <div id="widget"></div>
+        <div class="weather-widget" id="weather-widget"></div>
+        <div class="weather-widget" id="weather-widget"></div>
+<script type="text/javascript">
+    var weather = new WeatherWidget({
+        location: 'Paris, FR',
+        unit: 'metric',
+        theme: 'light',
+        display: 'both'
+    });
+    weather.render();
+</script>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.getElementById('geolocalizacion').innerHTML = 'Tu ubicación actual será mostrada aquí.';
+    </script>
+</body>
+</html>
